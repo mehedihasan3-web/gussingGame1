@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gussing Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card_title">
+          <h1>Gussing Number</h1>
+        </div>
+        <div class="card_body">
+          <form>
+            <div class="form_field">
+              <label for="gussingNumber">Guess a number between 1 to 5 :</label>
+              <input
+                type="number"
+                id="gussingNumber"
+                min="1"
+                max="5"
+                placeholder="Enter your number"
+                required
+              />
+            </div>
+
+            <div class="buttons">
+              <button type="submit" class="btn" id="check">Check result</button>
+            </div>
+          </form>
+          <p class="resultText"></p>
+          <p class="remainingAttempts"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
